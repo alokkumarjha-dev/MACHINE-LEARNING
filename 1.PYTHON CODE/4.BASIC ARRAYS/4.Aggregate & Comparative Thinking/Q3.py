@@ -1,13 +1,16 @@
 '''
-Replace every negative number with 0. 
+Merge two arrays into a third array. 
 '''
 
+m = int(input("Enter m : "))
+arr1 = []
+for i in range (m):
+    arr1.append(int(input("Enter Element : ")))
+print(arr1)
 n = int(input("Enter n : "))
-arr = []
+arr2 = []
 for i in range (n):
-    arr.append(int(input("Enter Element : ")))
-print("Original array =",arr)
-for j in range(n):
-    if arr[j]<0:
-        arr[j]=0
-print("Modified array =",arr)
+    arr2.append(int(input("Enter Element : ")))
+print(arr2)
+merge_arr = arr1 + arr2
+print("After merging of two array",merge_arr)
